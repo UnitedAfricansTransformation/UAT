@@ -1,0 +1,1 @@
+You can edit this page to indicate everything, that we supposed to do, all the enhancement you want, all the maintanance, we will use this repository to store the sytem code, code for online self registration(php) 
