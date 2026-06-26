@@ -46,7 +46,7 @@
         border-radius: 4px;
         border: 1px solid #4a4d55;
         background-color: #5d6168;
-        color: #ffffff;
+        color: #9aa0a6;
         font-weight: bold;
         vertical-align: middle;
         transition: none;
@@ -54,7 +54,7 @@
 
     .dropdown-list option {
         font-weight: bold;
-        color: #ffffff;
+        color: #9aa0a6;
         background-color: #5d6168;
     }
 
@@ -157,7 +157,7 @@
         .search-button {
             cursor: pointer;
             background-color: #5d6168;
-            color: #ffffff;
+            color: #9aa0a6;
             border: 1px solid #4a4d55;
             font-weight: bold;
         }
@@ -165,7 +165,7 @@
         .header-button {
             cursor: pointer;
             background-color: #172a57;
-            color: #ffffff;
+            color: #9aa0a6;
             border: 1px solid #172a57;
             border-radius: 4px;
             padding: 6px 14px;
@@ -185,9 +185,9 @@
      width: 195px;
      height: 167px;
  }
- .clickable, .dropdown-list {
+        .clickable, .dropdown-list {
      cursor: pointer;
-     color: #ffffff;
+     color: #9aa0a6;
  }
  .auto-style4 {
      color: #FF0000;
@@ -203,11 +203,16 @@
        }
         .auto-style7 {
             text-align: center;
-            color: darkblue;
+            color: #9aa0a6;
         }
         .auto-style8 {
-            color: #ffffff;
-        
+            color: #9aa0a6;
+        }
+
+        .title-text {
+            color: #9aa0a6 !important;
+            font-weight: bold;
+        }
 .form-control {
     width: 100%;
     padding: 8px;
@@ -433,7 +438,7 @@
             <tr>
                 <td>
                     <strong>
-                    <asp:Label ID="lblSearch" ForeColor="#666666" runat="server" Text=""></asp:Label>
+                    <asp:Label ID="lblSearch" ForeColor="#666666" runat="server" Text="" CssClass="title-text"></asp:Label>
                     <br />
                     </strong>
                     <asp:HiddenField ID="hdnProvince" runat="server" />
