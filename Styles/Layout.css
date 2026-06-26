@@ -1,0 +1,234 @@
+body {
+
+    color:grey;
+    margin : 0px 10px 50px 10px;
+    font-family:Verdana,Georgia,serif;
+    font-size:10px;
+    /*border-radius:5px;*/
+      display: block;
+      position:absolute;
+       /*position: fixed; -- No Scrolling*/
+       height:100%;
+    
+}
+/*devides the home page to 2 columns*/
+
+.column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+/*---------------------------*/
+Panel{
+    margin:10px
+}
+.Label1 {
+    color:red;
+   font-size:medium
+}
+
+
+.header  /* for div id=header*/
+{
+Margin:0px 10px 50px 0px;
+height:100px;
+width:100%;
+text-align:right;
+background-color: silver;
+ position: fixed;
+ color : darkgreen
+/*dont put width size to allow the use to expand and reduce page and header will not be affected*/
+}
+.logo
+{
+    border-radius:5px; /*round shaped corner*/
+   padding-top:10px; 
+   padding-bottom:0px; 
+    /*height:200px;*/
+   
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+.menu-bar{ /*Use # FOR ID Navbar*/
+      padding:0px;
+      margin:0px;
+    background-color:#090358;
+    text-align:left;  
+    font-weight:bold;
+    width:100%;
+}
+
+ 
+ .menu-bar ul{
+
+     list-style-type:none;
+     color:ghostwhite;
+   text-align:center;
+     margin-top:0px;
+     margin-bottom:0.5px;
+       padding:0px;
+     border-radius:0px;
+     display:flexbox;
+     height:26px;
+ 
+ }
+    .menu-bar ul li {
+         float:left;
+        margin:5px 2px 0px 2px;
+          position:relative;
+          border-radius:0.5px; 
+          font-size:14px;          
+          background-color:#090358;
+    }
+   .menu-bar ul li a{
+            text-decoration:none; /* it removes the underlines*/
+            /*padding:0.5em 1.5em 1em 1em;*/
+            padding:0.5em;
+            font-family:Arial;
+            font-size:14px;
+            color:ghostwhite;
+           grid-row-align:center;
+          
+    }
+
+     .menu-bar ul li a:hover{
+     border-radius:1px; 
+     color:ghostwhite;
+     display:flexbox;
+     background-color:grey;
+     margin:0px;
+     padding-top:1px;
+      width: 170px;
+      height:30px
+}
+
+.menu-bar ul ul {
+             display:none;
+             position:absolute;
+             clear:both;
+             text-rendering:inherit;
+             border-radius:1px 1px 2px 1px;
+          }
+
+.menu-bar ul li:hover ul{
+    display:block;
+     padding:0.2em 0em 1.5em 0em;
+  width:170px;
+  height:15px;
+}
+    .menu-bar ul li ul li a:hover {
+    color: ghostwhite; 
+    background-color: grey;
+    border-radius:0px;
+    display:flexbox;
+    position:static;
+    width:170px;
+    height:20px;
+   clear: both;
+   text-align:left;
+   margin:0.5px;
+   padding-bottom:2px;
+   padding-left:2px;
+   padding-right:15px;
+    }
+
+.menu-bar ul li ul li
+{ border-radius:0px;
+    display:inline-block;
+    position:relative;
+    width:170px;
+    height:20px;
+   clear: both;
+  /*width: 100%;*/
+   text-align:left;
+   margin:0.5px;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+h5,h4,h3{
+    color:grey;
+    padding-left:10px;
+    text-align: left;
+}
+h3{
+    /*color: ##006633;*/
+    color:#585858;
+
+    text-align: Left;
+}
+
+h2{
+    /*color: #006600;*/
+  color:#585858;
+    text-align: center;
+}
+h1{
+    color:red;
+    text-align: left;
+   font-size:10px;
+    font-style:italic;
+}
+.content-wrapper
+{
+Margin:100px 10px 100px 10px;
+/*position:static;*/
+width:100%;
+/*overflow-y:scroll;*/
+
+/*vertical-align:middle;*/
+font-size:14px;
+/*bottom:500px;*/
+ 
+}
+.modal
+{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: Black;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    -moz-opacity: 0.8;
+}
+.center
+{
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 130px;
+    background-color: White;
+    border-radius: 10px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -moz-opacity: 1;
+}
+.center img
+{
+    height: 128px;
+    width: 300px;
+}
+
+
+#footer{ /* user #when is IDs,put Footer at the bottom in html page*/
+    background-color:grey;
+    color:white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+text-align:center;
+border-radius:5px 5px 0px 0px; /*round shaped corner*/
+clear:both; /*protect the footer from floating elamants displaying on top of the footer*/
+width:100%;
+
+}
+
